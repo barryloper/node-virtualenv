@@ -82,7 +82,19 @@ Send flags to the virtualenv creation command:
 ```javascript
   "virtualenv": {
     "flags": [
+      "--python=python3.4",
       "--system-site-packages"
+    ]
+  }
+```
+
+Split your python requirements among multiple files:
+
+```javascript
+  "virtualenv": {
+    "requrements": [
+       "requirements1.txt",
+       "requirements2.txt"
     ]
   }
 ```
