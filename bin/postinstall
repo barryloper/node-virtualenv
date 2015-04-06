@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 
 var path = require("path");
-var virtualenv = require("../lib/virtualenv");
+var env = require("../lib/virtualenv");
 
 var packagePath = require.resolve(path.join(process.cwd(), "./package.json"));
 var pkg = require(packagePath);
-var env = virtualenv(packagePath);
 
 function warn(err) {
   console.warn(err.stack);

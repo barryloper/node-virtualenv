@@ -35,12 +35,10 @@ Next, spawn your isolated Python virtualenv from node:
 
 ```javascript
 var virtualenv = require("virtualenv");
-var packagePath = require.resolve("./package.json")
-var env = virtualenv(packagePath);
 
 // This is a child_process running Python using your virtualenv. You can
 // communicate with it over stdin/stdout, etc.
-var child = env.spawnPython(["./my_python_helper.py"]);
+var child = virtualenv.spawnPython(["./my_python_helper.py"]);
 ```
 
 You can also `spawn` any of the other commands in the virtualenv. For example,
@@ -49,11 +47,9 @@ a dependency, you can access the command `fab` that it installs:
 
 ```javascript
 var virtualenv = require("virtualenv");
-var packagePath = require.resolve("./package.json")
-var env = virtualenv(packagePath);
 
 // This is a child_process running fabric using your virtualenv.
-var child = env.spawn("fab", ["deploy", "-H", "example1.net,example2.net"]);
+var child = virtualenv.spawn("fab", ["deploy", "-H", "example1.net,example2.net"]);
 ```
 
 ## Advanced usage
