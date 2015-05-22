@@ -26,7 +26,7 @@
     "glob": "5.x",
     "tar": "0.x",
     "coffee-script": "1.7.x",
-    "pypi": "0.x",
+    "pypi": "barryloper/node-pypi",
     "semver": "2.x"
 
   },
@@ -38,8 +38,10 @@
   "license": "MIT",
 
   "author": {
-    "name": "Matt Pizzimenti, Barry Loper (fork)",
+    "name": "Matt Pizzimenti",
     "url": "http://mjpizz.com"
-  }
+  },
+  "contributors": [{"name": "Barry Loper",
+  "url": "https://github.com/barryloper"}]
 
 }
