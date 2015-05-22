@@ -25,7 +25,6 @@
     "rimraf": "2.x",
     "glob": "5.x",
     "tar": "0.x",
-    "coffee-script": "1.7.x",
     "pypi": "barryloper/node-pypi",
     "semver": "2.x"
 
