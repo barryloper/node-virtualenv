@@ -4,7 +4,7 @@ var path = require("path");
 var virtualenv = require("../lib/virtualenv");
 var env = new virtualenv(process.cwd());
 
-var pkg = require(path.join(process.cwd(), "./package.json"));
+var pkg = require(path.join(process.cwd(), "package.json"));
 
 function warn(err) {
   console.warn(err.stack);
